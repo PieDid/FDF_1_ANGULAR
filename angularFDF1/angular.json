@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angularFDF1"
+    }
+  },
+  "defaultProject": "angularFDF1",
+  "cli": {
+    "analytics": "0c758c9c-2e8b-48ed-b3a7-cf573fe37e99"
+  }
 }
