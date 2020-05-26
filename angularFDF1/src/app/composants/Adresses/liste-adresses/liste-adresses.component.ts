@@ -11,9 +11,10 @@ import { Router } from '@angular/router';
 export class ListeAdressesComponent implements OnInit {
 
   adresse = [];
-  private adresseService : AdresseService;
+  
+  private adresseService : AdresseService; /// devrait être dans le ctor , mais quand il y est, la page ne marche pas ...
 
-  constructor(private router : Router) { }
+  constructor(private router : Router ) { }
 
   ngOnInit(): void {
     this.adresseService.refreshNeeded.subscribe(

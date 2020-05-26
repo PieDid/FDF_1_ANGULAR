@@ -7,6 +7,6 @@ export interface IAdresse {
     codePostal : string;
     ville : string;
     
-    personne : IPersonne[];
+    //personne : IPersonne;
 
 }
