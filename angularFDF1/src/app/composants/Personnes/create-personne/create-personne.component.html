@@ -1,0 +1,70 @@
+
+<div class="container">
+    <form #personneForm="ngForm" (ngSubmit)="saveOrUpdatePersonne()">
+        <!-- panneau - panel -->
+        <div class="panel panel-primary">
+    
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- ++++++++++ head du panel +++++++++++ -->
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="panel-heading">
+                <h3 class="panel-title">Ajout d'une nouvelle personne</h3>
+            </div>
+    
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- ++++++++++ body du panel +++++++++++ -->
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="panel-body">
+    
+                <!-- ____ Nom ____ -->
+                <div class="form-group">
+                    <label for="p-nom">Nom : </label>
+                    <input type="text" class="form-control" placeholder="saisir le nom" id="p-nom" name="nom" [(ngModel)]="personne.nom">
+                </div>
+
+                <!-- ____ Prénom ____ -->
+                <div class="form-group">
+                    <label for="p-prenom">Prénom : </label>
+                    <input type="text" class="form-control" placeholder="saisir le prénom" id="p-prenom" name="prenom" [(ngModel)]="personne.prenom">
+                </div>
+    
+                <!-- ____ Email ____ -->
+                <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input type="email" class="form-control" placeholder="saisir l'email" id="email" name="email" [(ngModel)]="personne.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+                
+                <!-- ____ Téléphone ____ -->
+                <div class="form-group">
+                    <label for="p-telephone">Téléphone : </label>
+                    <input type="text" class="form-control" placeholder="saisir le numéro" id="p-telephone" name="telephone" [(ngModel)]="personne.telephone">
+                </div>
+    
+                <!-- ____ MDP ____ -->
+                <div class="form-group">
+                    <label for="p-mdp">Mot de Passe : </label>
+                    <input type="password" class="form-control" placeholder="saisir le mot de passe" id="p-mdp" name="mdp" [(ngModel)]="personne.motDePasse">
+                </div>
+                
+
+                <!-- ____ Adresse ____ -->
+                <div class="form-group">
+                    <label for="p-adresse">Adresse : </label>
+                    <!-- <input type="text" class="form-control" placeholder="saisir l'id de l'adresse" id="p-adresse" name="adresse" [(ngModel)]="personne.adresse"> -->
+                   <!--  <input type="text" class="form-control" placeholder="saisir l'adresse" id="p-adresse" name="adresse" [(ngModel)]="personne.adresseP"> -->
+                </div>
+                  
+    
+            </div>
+    
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <!-- ++++++++++ footer du panel +++++++++++ -->
+            <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="panel-footer">
+                <button class="btn btn-save btn-save">Enregistrer</button>
+            </div>
+    
+        </div>
+    </form>
+    
+    </div>
